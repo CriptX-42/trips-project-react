@@ -6,7 +6,6 @@ export default function reserve(state = [], action) {
       return produce(state, draft => {
         const tripIndex = draft.findIndex(trip =>
           trip.id === action.trip.id);
-
         if (tripIndex >= 0) {
           draft[tripIndex].amount += 1;
         } else {
