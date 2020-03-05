@@ -22,7 +22,7 @@ export default function Home() {
   function handleAdd(trip){
     //* disparandoa a ação para o redux
     dispatch({
-      type: 'ADD_RESERVA',
+      type: 'ADICIONAR_RESERVA',
       trip
     });
   }
