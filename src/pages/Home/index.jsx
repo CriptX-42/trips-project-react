@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { MdFlightTakeoff } from 'react-icons/md';
 
 import api from '../../services/api';
-import { adicionarReserva } from '../../store/modules/reserva/actions';
+import { addReserve } from '../../store/modules/reserva/actions';
 import './style.css';
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
 
   function handleAdd(trip){
     //* disparandoa a ação para o redux
-    dispatch(adicionarReserva(trip));
+    dispatch(addReserve(trip));
   }
 
   return (

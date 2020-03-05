@@ -1,12 +1,21 @@
-export function adicionarReserva(trip){
+export function addReserve(trip) {
   return {
-    type: 'ADICIONAR_RESERVA',
+    type: 'ADD_RESERVE',
     trip
   }
 }
-export function removerReserva(id){
+
+export function removeReserve(id) {
   return {
-    type: 'REMOVER_RESERVA',
+    type: 'REMOVE_RESERVE',
     id,
+  }
+}
+
+export function updateAmountReserve(id, amount) {
+  return {
+    type: 'UPDATE_RESERVE',
+    id,
+    amount
   }
 }
