@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 // * Paginas do React
 import Home from './pages/Home';
-import Reservas from './Reservas';
+import Reservas from './pages/Reservas';
 
 
 export default function Routes() {
