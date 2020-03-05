@@ -1,17 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import './style.css';
+import { MdDelete } from "react-icons/md";
+
+import "./style.css";
 
 export default function Reservas() {
-
-  return(
+  return (
     <>
-      <h1>Você solicitou 1 reserva</h1>
+      <h1 className="title">Você solicitou 1 reserva</h1>
       <div className="reservas">
-        <img src="https://sujeitoprogramador.com/wp-content/uploads/2019/12/maceio.jpg" alt=""></img>
+        <img
+          src="https://sujeitoprogramador.com/wp-content/uploads/2019/12/maceio.jpg"
+          alt=""
+        ></img>
         <strong>Viagem para Maceio</strong>
+        <span>Quantidade: 2</span>
+        <button type="button" onClick={() => {}}>
+          <MdDelete size={20} color="#443737" />
+        </button>
       </div>
+      <footer>
+        <button type="button">Solicitar Reservas</button>
+      </footer>
     </>
-  )
-
+  );
 }
