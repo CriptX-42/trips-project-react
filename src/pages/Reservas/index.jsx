@@ -2,7 +2,7 @@ import React from "react";
 
 import { useSelector, useDispatch } from "react-redux";
 
-import { MdDelete, MdAddCircle, MdRemoveCircle, MdUpdate } from "react-icons/md";
+import { MdDelete, MdAddCircle, MdRemoveCircle } from "react-icons/md";
 
 import { removeReserve, updateAmountReserve } from "../../store/modules/reserva/actions";
 import "./style.css";
